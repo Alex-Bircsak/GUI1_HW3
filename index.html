@@ -1,0 +1,75 @@
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table
+Alex Bircsak, UMass Lowell Computer Science, alex_bircsak@student.uml.edu
+Copyright (c) 2021 by Alex. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AB on July 31, 2021
+Description: Sample of custom pixel animations compared to the original versions.
+Source: https://www.w3schools.com/ pages for html used for reference.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GUI HW 3</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- Header with page title and subtitle. -->
+        <header>Interactive Dynamic Multiplaction Table<br>GUI Homework 3</header>
+        <!-- Div with blurb explaining the page content. -->
+        <div>
+            <p id="intro">explanation</p>
+        </div>
+
+        <!-- Form -->
+        <div>
+            <form id="userInput">
+                <table>
+                    <tr>
+                        <th><button type="button" onclick="makeTable()">Submit</button></th>
+                        <th>Starting</th>
+                        <th>Ending</th>
+                    </tr>
+                    <tr>
+                        <th>Multiplier</th>
+                        <td><input type="number" class="form-control" min="-50" max="50" id="x1" placeholder="-50 to 50"></td>
+                        <td><input type="number" class="form-control" min="-50" max="50" id="x2" placeholder="-50 to 50"></td>
+                    </tr>
+                    <tr>
+                        <th>Multiplicand</th>
+                        <td><input type="number" class="form-control" min="-50" max="50" id="y1" placeholder="-50 to 50"></td>
+                        <td><input type="number" class="form-control" min="-50" max="50" id="y2" placeholder="-50 to 50"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="tableDiv">
+            <p></p>
+        </div>
+        
+        <!-- Footer containing copyright information and w3s validation images. -->
+        <footer>
+            <span>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </span>             
+        </footer>
+
+        <!---------------->
+        <!-- Javascript -->
+        <!---------------->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
